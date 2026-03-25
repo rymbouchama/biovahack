@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── forced dark / black theme ── */
+    --background: 0 0% 0%;
+    --foreground: 140 20% 92%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 140 20% 92%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 140 20% 92%;
+
+    --primary: 142 72% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 150 15% 10%;
+    --secondary-foreground: 140 20% 85%;
+
+    --muted: 150 10% 8%;
+    --muted-foreground: 140 10% 40%;
+
+    --accent: 160 60% 45%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 15% 14%;
+    --input: 150 15% 12%;
+    --ring: 142 72% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 140 20% 92%;
+    --sidebar-primary: 142 72% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 150 15% 10%;
+    --sidebar-accent-foreground: 140 20% 85%;
+    --sidebar-border: 150 15% 14%;
+    --sidebar-ring: 142 72% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-mono-display {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .glow-green {
+    box-shadow: 0 0 30px hsl(142 72% 50% / 0.2), 0 0 60px hsl(142 72% 50% / 0.1);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px hsl(142 72% 50% / 0.5), 0 0 40px hsl(142 72% 50% / 0.2);
+  }
+
+  .border-glow {
+    border-color: hsl(142 72% 50% / 0.3);
+    box-shadow: 0 0 15px hsl(142 72% 50% / 0.1);
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "vitest": "^4.1.0"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.21",
+    "lovable-tagger": "^1.1.13",
+    "react-router-dom": "^7.13.1",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
